@@ -1,0 +1,112 @@
+body{
+    font-family: poppins;
+}
+.banner{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.carousel-caption {
+   padding-bottom: 220px;
+   font-family: poppins;
+   color: black;
+
+}
+.carousel-caption h2{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.carousel-caption span{
+    color: #0099ff;
+}
+.carousel-caption h3{
+    font-size: 25px;
+}
+.carousel-caption a{
+    background: #0099ff;
+    padding: 15px 35px;
+    display: inline-block;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 2px solid #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+.carousel-caption a:hover{
+    color: black;
+}
+.carousel-indicators .active{
+     background-color:#0099CC;
+}
+
+/* .d-block w-100{
+    height: 625px;
+    width: 100%;
+    overflow: hidden;
+
+} */
+
+@media only screen and (max-width: 767px) and (max-width:991px){
+    .carousel-captionp{
+        padding-bottom: 350px;
+    }
+    .carousel-caption h2{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .carousel-caption{
+        padding-bottom: 120px;
+    }
+    .carousel-caption h2{
+        font-size: 25px;
+    }
+    .carousel-caption h3{
+        font-size: 18px;
+    }
+    .carousel-caption a{
+        padding: 10px 25px;
+    }
+}
+
+/* login modal */
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content{
+    width:500px;
+    height: 300px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    
+}
+input{
+    width: 50%;
+    display: block;
+    margin: 15px auto;
+}
+.close{
+    position: absolute;
+    top:0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sign up</title>
+	<link rel="stylesheet" type="text/css" href="sign up.css">
+</head>
+<body>
+	<a href="login.html"></a>
+		<div class="wrap">
+			<h2>Sign Up</h2>
+			<p>It's free and only takes a minute</p>
+			<hr>
+             <form method="POST" action="/signupUser" onsubmit="return validate()">
+              <div class="username-form" >
+                     <input type="text" class="Username" id="uname" name="username" placeholder="Username" >
+                     <span id="hey"  style="color: red"></span>
+			   </div>
+               
+               <div class="password-form">
+               <input type="text" class="password" id="Passw" name="password" placeholder="Id_no" >
+               <span id="ID" style="color: red"></span>
+                  </div>
+
+                 <div class="confirm-password-form">
+                <input type="text" class="confirm-password" id="CID" name="confirm_password" placeholder="Confirm Id"  ></div>
+                  <span id="cID"  style="color: red"></span>
+                 <div class="submit-form">
+                <button type="submit" id="submit">Sign Up</button>
+                      </div>
+      <p class="Terms">By clicking the Sign Up button, you agree to our <br><a href="#">Terms &amp; Conditions</a>, and <a href="#">Privacy Policy</a>.</p>
+
+      <hr class="hr">
+      <div class="text-center">Already have an account? <a href="login.html">Login here</a></div>
+</form>
+      </div>
+      
+      <script>
+            function validate(){
+                  var user = document.getElementById('uname');
+                  var pass = document.getElementById('Passw');
+                  var cId = document.getElementById('CID')
+
+                  if(user.value == ''){
+                        document.getElementById('hey').innerHTML = 'please input username';
+                        return false;
+                  }
+                  if((user.value.length < 3 )||(user.value.lenght > 20)){
+                        document.getElementById('hey').innerHTML = 'please input characters between 3 and 20';
+                        return false;
+                  }
+                  if(!isNaN(user.value)){
+                        document.getElementById('hey').innerHTML = 'please input characters only';
+                        return false;
+                  }
+
+                  if( pass.value == ''){
+                        document.getElementById('ID').innerHTML = 'plese input Id_num';
+                        return false;
+                  }
+                  if((pass.value.length < 5 )||(pass.value.length > 20)){
+                        document.getElementById('ID').innerHTML = 'please input characters between 5 and 20';
+                        return false;
+                  }
+                  if(pass != cId){
+                        document.getElementById('cID').innerHTML = 'ID donot match';
+                        return false;
+                  }
+                  if(cId.value ){
+                        document.getElementById('cID').innerHTML = 'plese confirm Id';
+                        return false;
+                  }
+            }
+            
+      </script>
+       
+       
+		
+		
+		
+	
+
+</body>
+</html>

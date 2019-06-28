@@ -1,0 +1,115 @@
+body{
+     color: #f2f2f2;
+    background: #4c535d;
+	font-family: 'Roboto', sans-serif;
+	background-image: url(./images/8.jpg);
+	background-size: cover;
+}
+.wrap{
+	max-width: 400px;
+	height: 500px;
+	margin: auto;
+	border:1px solid #333;
+	padding-left: 20px;
+	background-color:#fff;	
+	margin-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 00.7)
+}
+h2{
+	color: #f5f5f5;
+	font-weight: bold;
+	font-size: 30px;
+}
+hr{
+	margin-left: -20px;
+	border-width: 0.5px;
+
+	/*color: #555;*/
+}
+.username-form{
+	    padding-top: 20px;
+}
+.Username{
+	width: 85%;
+	height: 34px;
+	padding: 6px 12px;
+    font-size: 15px ;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    /*color: #555;*/
+}
+.email-form{
+	padding-top: 20px; 
+}
+.email{
+	width: 85%;
+	height: 34px;
+	font-size: 15px;
+	padding: 6px 12px;
+	border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.password-form{
+	padding-top: 20px;
+}
+.password{
+	width: 85%;
+	height: 34px;
+	font-size: 15px;
+	padding: 6px 12px;
+	border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.confirm-password-form{
+	padding-top: 20px;
+}
+.confirm-password{
+	width: 85%;
+	height: 34px;
+	font-size: 15px;
+	padding: 6px 12px;
+	border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.submit-form{
+	
+	padding-top: 20px;
+ 
+}
+#submit{
+	width: 92%;
+	font-size: 16px;
+    font-weight: bold;
+    background: #5fcaba;
+    border: none;
+   border-radius: 3px;
+   height: 43px;
+    padding: 10px 16px;
+    color: #fff;
+    text-align: center;
+}
+.Terms{
+	text-align: center;
+	
+	font-size: 14px;
+	padding-top: 11px;
+}
+.Terms a{
+	color: #5fcaba;
+	text-decoration: none;
+}
+.hr{
+	margin-left: 3px;
+	margin-right:20px;
+}
+.text-center{
+    text-align: center;
+    padding-top: 10px;
+}
+.text-center a{
+	color: #5fcaba;
+	font-weight: bold;
+
+}

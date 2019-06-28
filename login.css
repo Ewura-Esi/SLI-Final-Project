@@ -1,0 +1,105 @@
+body{
+	color: #f2f2f2;
+	 background: #4c535d;
+	font-family: 'Roboto', sans-serif;
+	background-image: url(./images/8.jpg);
+	background-size: cover;
+
+}
+.wrap{
+	left: 50%;
+	max-width: 400px;
+	height: 430px;
+	margin: auto;
+	border:1px solid #333;
+	padding-left: 20px;
+	background-color:#fff;	
+	margin-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.7)
+}
+
+h2{
+	color: #f5f5f5;
+	font-weight: bold;
+	font-size: 30px;
+}
+hr{
+	margin-right: 20px;
+	border-width: 0.5px;
+    
+}
+.me{
+	font-size:25px;
+	margin: 0px;
+
+}
+#input_username {
+	width: 350px;
+	height: 33px;
+	border-radius:3px;
+	border-color: white;
+	padding-left:5px;
+
+}
+
+
+.ma{
+	font-size: 25px;
+	padding-top:15px; 
+	margin: 0px;
+ 
+}
+.input_password {
+	width: 350px;
+	height: 33px;
+	border-radius:3px;
+	border-color: white;
+	padding-left:5px;
+
+}
+.login{
+	 padding-top: 20px;
+
+
+}
+#login{
+	
+	
+	width: 360px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #5fcaba;
+	border:none;
+	font-weight: bold;
+	color: #fff;
+	font-size: 16px;
+}
+/*.cancel{
+
+}*/
+.forgot {
+	font-size: 15px;
+	margin-top: 20px;
+	text-align: center;
+}
+.forgot a{
+	text-decoration: none;
+	font-size:15px;
+	color: #00ccff;
+	text-decoration: underline; 
+}
+.signup  {
+	padding-top: 15px;
+	font-size: 20px;
+	text-align: center;
+
+}
+.signup a{
+	text-decoration: none;
+	color: #00ccff;
+}
+.signup a:hover{
+	border:1px solid #4c535d;
+}

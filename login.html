@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="login.js"></script>
+</head>
+<body>
+	<a href="login.html"></a>
+<div class="wrap">
+	<h2>Login Form</h2>
+	<hr>
+	<form action="recordsunit.html" onsubmit="return validate()">
+		<div ><p class= "me">Username</p>
+		 <input id="input_username" type="text"  name="username"  
+			 placeholder="myusername "  autofocus >
+			 <span id="usernameid" style="color: red; font-weight:bold"></span>
+			</div>
+
+		  <div ><p class="ma">Id</p>
+		   <input  class="input_password" id="id"   type="text"  name="Id" placeholder="eg. 00000001" >
+		   <span id="idnum" style="color: red; font-weight:bold"></span></div>
+
+            <div> <p class="login"></p>
+		     <button type="submit" id="login">Login </button>
+              </div>
+             
+
+		     <div class="forgot"> Forgot <a href="#"> Password?</a></div>
+		       <div class="signup"> <a href ="sign up.html"> Dont have an account? Sign up Here! </a></div>
+	</form>
+</div>
+
+
+</body>
+</html>

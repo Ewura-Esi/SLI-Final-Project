@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Nurse Dashboard</title>
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="css/admin.css" rel="stylesheet">
+
+  <style>
+
+
+fieldset.vital_signs {
+    border: 1px groove #58CCED !important;
+    border-radius: 12px;
+    padding: 1em 1.4em 1.4em 1.4em !important;
+    margin: 0px 40px  !important;
+            box-shadow:  8px 8px 3px 3px  #58CCED;
+}
+
+   legend.vital_signs {
+        font-size: 34px !important;
+        font-weight: bold !important;
+        text-align: left!important;
+        width:auto;
+        padding:2px 50px;
+        border-bottom:none;
+    }
+    
+    #my-icon{  
+        position: relative;
+        height: 85px;
+        width:110px;
+        padding:0;
+   }
+
+   .the-pic{
+     display: grid;
+     grid-template-columns: 30% 10%;
+   }
+
+   #nurse{
+     font-size:22px;
+     color: white;
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     padding-top: 28px;
+   }
+
+    a{
+     font-size:18px !important;
+   }
+
+
+   label{
+     font-size: 18px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 500;
+     padding:5px;
+   }
+   input[type='number']{
+    width: 120px;
+    font-size:18px;
+    margin:5px;
+    border-radius:3px;
+    border:1px solid  #58CCED;
+}
+
+  </style>
+</head>
+<body id="page-top">
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark static-top" id="mynav">
+      <div class="the-pic"> 
+          <p id="nurse">Nurse</p>
+    <img src="./images/doctor.png" id="my-icon">
+  </div>
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+ </nav>
+
+  <div id="wrapper" >
+    <ul class="sidebar navbar-nav" id="mysidebar">
+      <li class="nav-item active">
+        <a class="nav-link" href="myprofile.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>My Dashboard</span>
+        </a>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="patientlists.html">
+          <i class="fas fa-fw fa-table"></i>
+          <span>List of Patients</span></a>
+      </li>
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="#">Nurse Dashboard</a>
+          </li>
+          <li class="breadcrumb-item active">Overview</li>
+        </ol>
+
+            <form>
+            <fieldset class="vital_signs">
+                <legend class="vital_signs">Vital Signs</legend>
+                <div class="row">
+                    <div>
+                      <label>Temperature(0C):</label>
+                      <input type="number"required>
+                    </div>
+                    <div>
+                      <label>Blood Pressure(kPa):</label>
+                      <input type="number"  required>
+                    </div>
+                    <div>
+                      <label>Weight(Kg):</label>
+                      <input type="number" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                      <label>Height(m):</label>
+                      <input type="number" required>
+                    </div>
+                    <div>
+                      <label>Blood Group:</label>
+                      <input type="number">
+                    </div>
+                </div>
+                <a href="doctor.html" class="btn btn-primary">Send to Doctor</a>
+            </fieldset>
+          </form>
+          </div>
+          </div>
+        </div>
+       
+     
+      
+      <footer class="sticky-footer">
+        <div class="container my-auto">
+          <div class="copyright text-center my-auto">
+            <span>Copyright © Nurse 2019</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    
+</body>
+
+</html>

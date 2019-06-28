@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patients Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</head>
+    <body>
+		<div class="container register-form top-buffer-1">
+		  <div class="form">
+			  <div class="note">
+				<p>PATIENT PROFILE</p>
+			  </div>
+		 <div class="form-content bk">
+				<form action="display.html" method="get">
+					<fieldset class="scheduler-border">
+						<legend class="scheduler-border">Personal Information</legend>
+						<div class="row">
+							<div class="col-SM-2">
+							  <label for="title">Title</label>
+							  <input type="name" class="form-control" id="title" placeholder="Mr/Mrs/Miss" name="title"  required>
+							</div>
+							<div class="col-SM-5">
+							  <label for="firstname">First Name</label>
+							  <input type="name" class="form-control" id="p-name" placeholder="FirstName" name="firstname" required>
+							</div>
+							<div class="col-sm-5">
+							  <label for="lastname">Last Name</label>
+							  <input type="name" class="form-control" id="p-name" placeholder="Last Name" name="lastname"  required>
+							</div>
+						</div>
+						<div>
+						<div class="row top-buffer">
+							<div class="col-sm-3">
+							  <label for="age">Age</label>
+							  <input type="number" class="form-control"  name="age"  required>
+							</div>
+							<div class="col-sm-3">
+								<label for="id-number">ID Number</label>
+								<input type="number" class="form-control" name="id-number"  required>
+							  </div>
+							<div class="col-sm-3">
+							  <label for="dob">Date of Birth</label>
+							  <input name="date" class="form-control" type="date"  required>
+							</div>
+							<div class="col-sm-2">
+							  <label for="phone">Phone Number</label>
+							  <input name="phone" class="form-control" type="number" required>
+							</div>
+							<div class="col-sm-8">
+							  <label for="cname">Gender:</label>
+							  <label class="checkbox-inline"><input type="checkbox" name="sex" value="Female">F</label>
+							  <label class="checkbox-inline"><input type="checkbox" name="sex" value="Male">M</label>
+							  <input type="checkbox" name="tname[]"  value="others"> Others
+							  <input  name="tname[]" type="text" class="form-control"> 
+							 <div></div>
+							 <div class="col-sm-4">
+							 <label for="place of birth">Place of Birth</label>
+							  <input name="place of birth" class="form-control" type="text" required>
+							  </div> 
+							  
+						<div class="row top-buffer">
+							<!-- Address -->
+							  <div class="col-sm-4">
+								<label for="inputAddress">Home Address</label>
+								<input type="text" class="form-control" id="inputAddress" required>
+							  </div>
+							  <div class="col-sm-4">
+								<label for="inputAddress2">Address(Optional)</label>
+								<input type="text" class="form-control" id="inputAddress2">
+							  </div>
+							</div>
+							  <div class="form-row">
+								<div class="form-group col-sm-2">
+								  <label for="inputCity">City</label>
+								  <input type="text" class="form-control" name="city" id="inputCity" required>
+								</div>
+								<div class="form-group col-sm-2">
+								  <label for="inputState">State</label>
+								  <input type="text" class="form-control" required>
+								</div>
+								<div class="form-group col-md-2">
+								  <label for="inputZip">ZipCode</label>
+								  <input type="text" class="form-control" name="zip" id="inputZip">
+								</div>
+							  </div>
+							  
+							</div>
+						</div>
+					</fieldset>
+					
+					<!-- Other Information-->
+					
+					<fieldset class="scheduler-border">
+						<legend class="scheduler-border">Other Information</legend>
+						<div class="row">
+							<div class="col-sm-4">
+							  <label for="cname">Mother Name</label>
+							  <input type="text" class="form-control" id="title" placeholder="mother name" required>
+							</div>
+							<div class="col-sm-4">
+							  <label for="uname">Mother's Address</label required>
+							  <input type="name" class="form-control" id="fmane">
+							</div>
+							<div class="col-sm-4">
+							  <label for="place">Contact No.</label required>
+							  <input type="number" class="form-control" id="fmane">
+							</div>
+						</div>
+						<div class="row top-buffer">
+							<div class="col-sm-4">
+							  <label for="cname">Father Name</label>
+							  <input type="text" class="form-control" id="title" placeholder="father name" required>
+							</div>
+							<div class="col-sm-4">
+							  <label for="cname">Father's Address</label>
+							  <input  class="form-control"  type="text"  id="fname" required>
+							</div>
+							<div class="col-sm-4">
+							  <label for="contact">Contact No.</label>
+							  <input type="number" class="form-control" id="fmane" required>
+							</div>
+				
+						</div>
+					</fieldset>
+					<!--Insurance -->
+				
+					<fieldset class="scheduler-border">
+						<legend class="scheduler-border">Insurance</legend>
+						<div class="row">
+								<div class="col-sm-8">
+										<label for="cname">Is this Patient covered by Insurance?</label>
+										<label class="checkbox-inline"><input type="checkbox" name="yes[]" value="Yes">Yes</label>
+										  <label class="checkbox-inline"><input type="checkbox" name="no[]" value="No">No</label>
+									  </div>
+									  
+									  <div class="col-sm-4">
+										<label for="location">Occupation</label>
+										<input type="name" class="form-control" id="fmane" placeholder="Doctor" name="occupation">
+									  </div>
+									  <div class="col-sm-8">
+											  <label for="location">Employer,Employer Address</label>
+											  <input type="name" class="form-control" id="fmane" name="employer">
+											</div>
+						</div>
+					</fieldset>
+					<!-- In case of Emergency-->
+				
+					<fieldset class="scheduler-border">
+						<legend class="scheduler-border">In Case Of Emergency</legend>
+						<div class="row">
+							<div class="col-sm-2">
+							  <label for="location">Name of a friend or Relative:</label>
+							  <input type="text" class="form-control" id="title" placeholder="name" required>
+							</div>
+							<div class="col-sm-6">
+							  <label for="cname">Relationhip to Patient</label>
+							  <input type="text" class="form-control"  required>
+					
+							</div>
+							<div class="col-sm-4">
+							  <label for="contact">Contact No.</label>
+							  <input type="number" class="form-control" id="fmane" required>
+							</div>
+						</div>
+					</fieldset>
+					
+					<button onclick="sendit();" type="submit"  class="btn btn-success" value="submit">Submit to Nurse </button>
+					<button  onclick="sendto();" type="submit"  class="btn btn-primary" value="submit">Submit to Doctor</button>
+				</form>
+			</div>
+		  </div>
+		  </div>
+ 
+	<script>
+	const sendit= () =>{
+		window.location.href='./nurse.html'
+	}
+	
+	const sendto = () =>{
+		window.location.href = './doctor.html'
+	}
+	</script>
+</body>
+</html>
